@@ -1,0 +1,24 @@
+*
+!Dockerfile
+!requirements.lock
+!app.py
+!dashboard/
+!dashboard/__init__.py
+!dashboard/schema.py
+!dashboard/inference.py
+!artifacts/
+!artifacts/*.joblib
+!artifacts/manifest.json
+!.streamlit/
+!.streamlit/config.toml
+!service/
+!service/Dockerfile
+!service/__init__.py
+!service/api.py
+!service/requirements.lock
+
+# Never send local credentials or caches to either image.
+**/.env
+**/.env.*
+**/__pycache__/
+**/*.pyc

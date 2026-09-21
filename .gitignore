@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# Environment / secrets
+.env
+.streamlit/secrets.toml
+
+# Experiment outputs
+models/
+*.joblib
+
+# The small, release-ready inference bundles are intentionally versioned.
+!artifacts/*.joblib
+.pytest_cache/
+release/
+.cache/
+
+# Next.js and local deployment secrets
+node_modules/
+.next/
+*.tsbuildinfo
+.env.*
+!.env.example
+.vercel/
+test-results/
+playwright-report/
