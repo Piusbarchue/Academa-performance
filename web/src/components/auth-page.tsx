@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, Sparkles, ShieldCheck, Check } from "lucide-react";
+import { ArrowLeft, ShieldCheck, Check } from "lucide-react";
 import { Brand } from "./brand";
 import { AuthForm } from "./auth-form";
 import { authConfigured } from "@/lib/supabase/config";
@@ -33,9 +33,7 @@ export function AuthPage({
       <aside className="auth-panel">
         <Brand light />
         <div className="auth-panel-copy">
-          <span className="eyebrow">
-            <Sparkles size={14} /> INSIGHT WITH PERSPECTIVE
-          </span>
+          <span className="eyebrow">INSIGHT WITH PERSPECTIVE</span>
           <h1>
             Understand
             <br />
