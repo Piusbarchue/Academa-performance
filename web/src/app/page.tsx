@@ -2,7 +2,6 @@ import Link from "next/link";
 import {
   ArrowRight,
   ArrowUpRight,
-  Sparkles,
   ShieldCheck,
   Layers3,
   ChartNoAxesCombined,
@@ -24,12 +23,7 @@ export default function Home() {
       <main>
         <section className="hero container">
           <div className="hero-copy">
-            <div className="eyebrow">
-              <span className="tiny-spark">
-                <Sparkles size={13} />
-              </span>{" "}
-              STUDENT INSIGHT, WITH PERSPECTIVE
-            </div>
+            <div className="eyebrow">STUDENT INSIGHT, WITH PERSPECTIVE</div>
             <h1>
               A clearer view.
               <br />A more informed
