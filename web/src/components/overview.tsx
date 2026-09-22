@@ -8,7 +8,6 @@ import {
   Layers3,
   Users,
   BookmarkCheck,
-  Sparkles,
 } from "lucide-react";
 import { OutcomeBadge } from "./probabilities";
 import { stages, stageLabels, catalog } from "@/lib/catalog";
@@ -79,9 +78,7 @@ export function Overview({
       </div>
       <div className="workspace-two-col">
         <section className="get-started-card">
-          <span className="eyebrow">
-            <Sparkles size={13} /> TURN INFORMATION INTO PERSPECTIVE
-          </span>
+          <span className="eyebrow">TURN INFORMATION INTO PERSPECTIVE</span>
           <h2>
             Ready for your
             <br />
@@ -123,7 +120,7 @@ export function Overview({
               <div>
                 <strong>{stageLabels[stage]}</strong>
                 <small>
-                  {catalog[stage].features.length} inputs ·{" "}
+                  {catalog[stage].features.length} inputs · {" "}
                   {(catalog[stage].accuracy * 100).toFixed(1)}% held-out accuracy
                 </small>
               </div>
